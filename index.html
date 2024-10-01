@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nigel McTaw Portfolio Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        background: url("https://images.unsplash.com/photo-1604079622575-cf2b2da5c32f")
+          no-repeat center center fixed;
+        background-size: cover;
+        color: #e0e0e0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav a {
+        color: #e0e0e0;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #00bfff;
+      }
+
+      .toggle-menu {
+        display: none;
+      }
+
+      section {
+        margin: 40px;
+        background-color: rgba(30, 30, 30, 0.9);
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      h2 {
+        color: #ffffff;
+      }
+
+      ul {
+        list-style-type: square;
+      }
+
+      .project {
+        background-color: #2c2c2c;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        transition: transform 0.3s;
+      }
+
+      .project:hover {
+        transform: translateY(-5px);
+      }
+
+      .image-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      #back-to-top {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        background: #00bfff;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 50%;
+        display: none;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+
+      #back-to-top:hover {
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 768px) {
+        .toggle-menu {
+          display: block;
+          font-size: 1.5rem;
+          cursor: pointer;
+        }
+
+        nav ul {
+          display: none;
+          flex-direction: column;
+          background: rgba(0, 0, 0, 0.9);
+          position: absolute;
+          top: 50px;
+          right: 20px;
+          width: 200px;
+        }
+
+        nav ul.active {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Nigel McTaw</h1>
+      <i class="fas fa-bars toggle-menu"></i>
+      <ul>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="about-me">
+      <h2>About Me</h2>
+      <div class="image-container">
+        <img
+          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+          alt="3D illustration of a coding workspace"
+        />
+      </div>
+      <p>
+        Hi, I’m Nigel McTaw, a passionate web developer with a knack for
+        creating efficient, visually appealing, and user-friendly websites. I am
+        skilled in modern web development technologies and frameworks, and I
+        enjoy turning complex problems into elegant, simple code solutions.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills & Technologies</h2>
+      <div class="image-container">
+        <img
+          src="https://images.unsplash.com/photo-1508780709619-79562169bc64"
+          alt="3D rendering of programming code on a screen"
+        />
+      </div>
+      <ul>
+        <li>
+          <strong>Front-end:</strong> HTML, CSS, JavaScript, Bootstrap, React
+        </li>
+        <li><strong>Back-end:</strong> Node.js, Express.js</li>
+        <li><strong>Database:</strong> MongoDB, SQL</li>
+        <li><strong>Tools:</strong> Git, GitHub, VS Code, Figma</li>
+        <li>
+          <strong>Additional Experience:</strong> Expertise in creating and
+          styling HTML forms, working with dark theme interfaces, and organizing
+          content for a better user experience.
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Registration Form Practice Project</h3>
+        <div class="image-container">
+          <img
+            src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1b"
+            alt="Digital image of form development with code on screen"
+          />
+        </div>
+        <p>
+          A responsive and fully functional registration form with an emphasis
+          on modern styling and accessibility. It features fieldsets, labels,
+          and file upload elements, all implemented with a focus on user
+          experience.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Home Improvement App (In Development)</h3>
+        <div class="image-container">
+          <img
+            src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
+            alt="Digital illustration of app development and coding"
+          />
+        </div>
+        <p>
+          An intuitive home improvement app designed to help users manage and
+          track DIY projects. The app provides guides, cost estimation, and
+          required materials, enhancing user experience with React's dynamic
+          capabilities.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Courier Business Landing Page</h3>
+        <div class="image-container">
+          <img
+            src="https://images.unsplash.com/photo-1593642634367-d91a135587b5"
+            alt="Digital illustration of website development"
+          />
+        </div>
+        <p>
+          Developed a professional landing page for a courier startup, focusing
+          on promoting services, ease of navigation, and lead generation. The
+          design is responsive, with a focus on quick load times and clear
+          call-to-action elements.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>
+        Interested in working together or have a project in mind? Reach out!
+      </p>
+      <ul>
+        <li>
+          <strong>Email:</strong>
+          <a href="mailto:nigelmctaw@execs.com">nigelmctaw@execs.com</a>
+        </li>
+        <li>
+          <strong>Phone:</strong> <a href="tel:+14044221192">404-422-1192</a>
+        </li>
+        <li>
+          <strong>GitHub:</strong>
+          <a
+            href="https://github.com/NigelMcTaw"
+            target="_blank"
+            rel="noopener noreferrer"
+            >github.com/NigelMcTaw</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+      // Toggle mobile menu
+      document
+        .querySelector(".toggle-menu")
+        .addEventListener("click", function () {
+          document.querySelector("nav ul").classList.toggle("active");
+        });
+
+      // Show "Back to Top" button on scroll
+      window.addEventListener("scroll", function () {
+        const backToTopButton = document.getElementById("back-to-top");
+        if (window.scrollY > 300) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      });
+
+      // Smooth scroll to top
+      document
+        .getElementById("back-to-top")
+        .addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+    </script>
+  </body>
+</html>
